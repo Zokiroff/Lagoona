@@ -5,26 +5,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lagoon</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/stylу.css">
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-left">
-				<div class="header-logo">
-					<a href="#">
-						<img src="./img/logo.png" alt="Logotip Lagoona">
-					</a>
-					<nobr class="phone">+7 495 322-54-48</nobr>
-				</div>
-			</div>
-			<div class="header-right">
-				<a href="#" class="header-right-link">
-					Личный кабинет
-				</a>
-			</div>
-			<nav class="header-nav">
-				<ul class="header-list">
+      <div class="header-logo flex">
+        <a href="#" class="logo">
+          <img src="./img/logo.png" alt="Лагуна - сеть отелей">
+        </a>
+        <nobr class="phone">+7 495 322-54-48</nobr>
+        <a href="#" class="header-right-link">
+          Личный кабинет
+        </a>
+      </div>
+			<nav class="header-nav flex">
+				<ul class="header-list list-reset flex">
 					<li class="header-list-item">
 						<a href="#" class="header-link">
 							О&nbsp;нас
@@ -65,47 +63,51 @@
 			</nav>
 		</div>
 	</header>
+
 	<main class="main">
 		<section class="special">
 			<div class="container">
 				<h2 class="title">
 					Спецпредложения
 				</h2>
-				<div class="special-block">
-					<h3 class="special-block-title">
-						Мальдивские острова
-					</h3>
-					<p class="special-block-text">
-						от&nbsp;55&nbsp;000&nbsp;₽
-					</p>
-					<a class="special-block-link" href="#">
-						Подробнее
-					</a>
-				</div>
-				<div class="special-block">
-					<h3 class="special-block-title">
-						Горящий тур на&nbsp;остров Крит
-					</h3>
-					<p class="special-block-text">
-						от&nbsp;30&nbsp;000&nbsp;₽
-					</p>
-					<a class="special-block-link" href="#">
-						Подробнее
-					</a>
-				</div>
-				<div class="special-block">
-					<h3 class="special-block-title">
-						Номера категории люкс
-					</h3>
-					<p class="special-block-text">
-						от&nbsp;55&nbsp;000&nbsp;₽
-					</p>
-					<a class="special-block-link" href="#">
-						Подробнее
-					</a>
-				</div>
+				<ul class="special-list list-reset flex">
+					<li class="special-item">
+            <h3 class="special-item-title">
+              Мальдивские острова
+            </h3>
+            <p class="special-item-text">
+              от&nbsp;55&nbsp;000&nbsp;₽
+            </p>
+            <a class="special-item-link" href="#">
+              Подробнее
+            </a>
+          </li>
+					<li class="special-item">
+            <h3 class="special-item-title">
+              Номера категории люкс
+            </h3>
+            <p class="special-item-text">
+              от&nbsp;55&nbsp;000&nbsp;₽
+            </p>
+            <a class="special-item-link" href="#">
+              Подробнее
+            </a>
+          </li>
+					<li class="special-item">
+            <h3 class="special-item-title">
+              Горящий тур на&nbsp;остров Крит
+            </h3>
+            <p class="special-item-text">
+              от&nbsp;30&nbsp;000&nbsp;₽
+            </p>
+            <a class="special-item-link" href="#">
+              Подробнее
+            </a>
+          </li>
+				</ul>
 			</div>
 		</section>
+
 		<section class="about">
 			<div class="container">
 				<h2 class="title">
@@ -116,19 +118,20 @@
 				</p>
 			</div>
 		</section>
+
 		<section class="services">
 			<div class="container">
 				<h2 class="title">
 					Услуги
 				</h2>
-				<ul class="services-items">
+				<ul class="services-list list-reset flex">
 					<li class="services-item">
 						<div class="blog-services">
 							<img src="./img/blog-1.jpg" alt="blog-services-image">
 							<div class="blog-services-text">
-								<h4 class="blog-services-title">
+								<h3 class="blog-services-title">
 									Эксклюзивное обслуживание
-								</h4>
+								</h3>
 								<p class="blog-services-descr">
 									Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
 								</p>
@@ -139,9 +142,9 @@
 						<div class="blog-services">
 							<img src="./img/blog-2.jpg" alt="blog-services-image">
 							<div class="blog-services-text">
-								<h4 class="blog-services-title">
+								<h3 class="blog-services-title">
 									Аренда банкетных залов
-								</h4>
+								</h3>
 								<p class="blog-services-descr">
 									Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
 								</p>
@@ -152,9 +155,9 @@
 						<div class="blog-services">
 							<img src="./img/blog-3.jpg" alt="blog-services-image">
 							<div class="blog-services-text">
-								<h4 class="blog-services-title">
+								<h3 class="blog-services-title">
 									Сауны, бассейны, бани, фитнес-залы
-								</h4>
+								</h3>
 								<p class="blog-services-descr">
 									Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
 								</p>
@@ -165,9 +168,9 @@
 						<div class="blog-services">
 							<img src="./img/blog-4.jpg" alt="blog-services-image">
 							<div class="blog-services-text">
-								<h4 class="blog-services-title">
+								<h3 class="blog-services-title">
 									Охраняемые автомобильные стоянки
-								</h4>
+								</h3>
 								<p class="blog-services-descr">
 									Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
 								</p>
@@ -177,12 +180,13 @@
 				</ul>
 			</div>
 		</section>
+
 		<section class="advantage">
 			<div class="container">
 				<h2 class="title">
 					Преимущества
 				</h2>
-				<ul class="advantage-items">
+				<ul class="advantage-list list-reset flex">
 					<li class="advantage-item">
 							<img src="./img/bathtub.svg" alt="Advantage blog icon">
 						<p class="advantage-item-descr">
@@ -234,197 +238,197 @@
 				</ul>
 			</div>
 		</section>
+
 		<section class="hotels">
 			<div class="container">
 				<h2 class="title">
 					Размещение
 				</h2>
-				<ul class="hotels-items">
+				<ul class="hotels-list list-reset flex">
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-1.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-1.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+                <span class="blog-hotels-stars">
+                  <img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img src="./img/i-star.svg" alt="">
+                  <img src="./img/i-star.svg" alt="">
+                  <img src="./img/i-star.svg" alt="">
+                  <img src="./img/i-star-empty.sv" alt="">
+                </span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-2.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-2.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
-								<p class="blog-hotels-city">Барселона, Испания</p>
-								<button class="btn">Номера</button>
 								<span class="blog-hotels-stars">
 									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
 									<img src="./img/i-star.svg" alt="">
 									<img src="./img/i-star.svg" alt="">
 									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
+									<img src="./img/i-star-empty.sv" alt="">
 								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
+								<p class="blog-hotels-city">Барселона, Испания</p>
+								<button class="btn">Номера</button>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-3.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-3.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-4.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-4.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-5.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-5.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-6.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-6.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-7.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-7.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-8.jpg" alt="Blog hotels images">
+							<img src="./img/hotel-8.jpg" alt="Отель">
 							<div class="blog-hotels-descr">
 								<p class="blog-hotels-prace">
 									<span class="blog-hotels-text-light">от&nbsp;</span>
 									<span class="blog-hotels-text-bold">4&nbsp;698&nbsp;₽&nbsp;</span>
 									/ ночь
 								</p>
-								<p class="blog-hotels-hotel">Lagoona espa&ntilde;ola</p>
+								<span class="blog-hotels-stars">
+									<img src="./img/i-star.svg" alt="Рейтинг отеля 5 из 5">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+									<img src="./img/i-star.svg" alt="">
+								</span>
+								<h4 class="blog-hotels-hotel">Lagoona espa&ntilde;ola</h4>
 								<p class="blog-hotels-city">Барселона, Испания</p>
 								<button class="btn">Номера</button>
-								<span class="blog-hotels-stars">
-									<img src="./img/i-star.svg" alt="Рейтинг отеля 4 из 5">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star.svg" alt="">
-									<img src="./img/i-star-empty.svg" alt="">
-								</span>
 							</div>
 						</div>
 					</li>
 					<li class="hotels-item">
 						<div class="blog-hotels">
-							<img src="./img/hotel-9.jpg" alt="Blog hotels images">
 							<div class="blog-hotels-descr">
 								<p>
 									Посмотреть все варианты
 								</p>
 							</div>
-						</div>	
+						</div>
 					</li>
 				</ul>
 			</div>
