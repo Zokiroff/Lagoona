@@ -17,9 +17,50 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Light'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: "font", sans-serif;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
 }
 
 /* Global */
@@ -50,8 +91,25 @@ body {
   padding-right: 40px;
 }
 
-.header-right-link {
+.phone {
+  font-weight: 500;
+  font-size: 20px;
+  color: #666;
+}
+
+.header-logo-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c93;
   margin-left: auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  padding-left: 26px;
+}
+
+.header-logo-tab {
+  background-image: url(../img/keyboard_tab.svg);
 }
 
 .header-nav {
