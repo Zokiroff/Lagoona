@@ -61,6 +61,7 @@ body {
   min-width: 1200px;
   font-family: "Muller", sans-serif;
   font-weight: 400;
+  background: #f1f1f1;
 }
 
 /* Global */
@@ -76,12 +77,15 @@ body {
 
 .container {
   width: 1200px;
-  padding: 0 15px;
+  padding: 0;
   margin: 0 auto;
 }
 
 
 /* Header */
+.header {
+  padding-bottom: 70px;
+}
 .header-logo {
   align-items: center;
   padding: 30px 0;
@@ -113,58 +117,227 @@ body {
 }
 
 .header-nav {
-  padding-bottom: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 15px;
+  align-items: center;
 }
 
 .header-list {
   margin-right: auto;
+  padding-left: 45px;
 }
 
 .header-list-item:not(:last-child) {
   padding-right: 45px;
 }
 
+.btn {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c93;
+  border: 1px solid #c93;
+  border-radius: 10px;
+  padding: 13px 20px;
+  max-width: 100%;
+  max-height: 42px;
+  background: #fff;
+}
+
+.header-btn {
+  margin-right: 45px;
+}
+
+.header-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+}
+
 /* Special */
+.special {
+  margin-bottom: 70px;
+}
+
 .title {
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333;
+  padding-left: 40px;
 }
 
 .special-list {
   flex-wrap: wrap;
-}
-
-.special-item {
-  width: 570px;
-  margin-bottom: 30px;
+  gap: 24px;
 }
 
 .special-item-title {
   margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.special-item-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f0bf5f;
+}
+
+.card-maldives {
+  background-image: url(../img/special_1.jpg);
+}
+
+.card-crete {
+  background-image: url(../img/special_2.jpg);
+}
+
+.card-luxury {
+  background-image: url(../img/special_3.jpg);
+}
+
+.flex-container {
+  min-height: 540px;
+  display: flex;
+  gap: 24px;
+}
+
+.flex-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.special-item-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.8;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 47px;
+}
+
+.card-small {
+  flex: 1;
+}
+
+.card-big {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.card-big h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+}
+
+.card-big p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* About */
+.about {
+  margin-bottom: 70px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  max-width: 888px;
 }
 
 /* Services */
+.services {
+  margin-bottom: 70px;
+}
+
 .services-list {
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .services-item {
   width: 570px;
-  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.blog-services-text {
+  width: 402px;
+  height: 104px;
+  margin: 26px 126px 35px 45px;
+}
+
+.blog-services-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #c93;
+  margin: 0;
+}
+
+.blog-services-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  margin: 0;
 }
 
 /* Advantage */
+.advantage {
+  margin-bottom: 70px;
+}
+
 .advantage-list {
   flex-wrap: wrap;
+  gap: 22px;
 }
 
 .advantage-item {
+  border-radius: 15px;
   width: 276px;
-  margin-bottom: 30px;
+  height: 276px;
+  background: #fff;
+  padding: 40px 42px 32px 45px;
 }
 
 .advantage-item:not(:nth-child(4n)) {
   padding-right: 25px;
+}
+
+.advantage-item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  margin: 0;
+  width: 189px;
+  height: 128px;
 }
 
 /* Hotels */
