@@ -343,13 +343,68 @@ body {
 /* Hotels */
 .hotels-list {
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .hotels-item {
   width: 374px;
+  height: 440px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.blog-hotels-descr {
+  padding: 30px 45px;
+}
+
+.blog-descr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blog-hotels-prace {
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
 }
 
+.blog-hotels-text-light {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+}
+
+.blog-hotels-text-bold {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.blog-hotels-hotel {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.blog-hotels-city {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+}
+
+.blog-all {
+  position: relative;
+}
+
+.blog-all-text {
+  position: absolute;
+  left: 50px;
+  bottom: 31px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #fff;
+  margin: 0;
+}
