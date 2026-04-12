@@ -140,8 +140,9 @@ body {
   border-radius: 10px;
   padding: 13px 20px;
   max-width: 100%;
-  max-height: 42px;
+  max-height: 100%;
   background: #fff;
+  cursor: pointer;
 }
 
 .header-btn {
@@ -181,6 +182,9 @@ body {
 }
 
 .special-item-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 400;
   font-size: 16px;
   color: #f0bf5f;
@@ -293,6 +297,9 @@ body {
 }
 
 .blog-services-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
@@ -403,6 +410,9 @@ body {
 }
 
 .blog-all-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   position: absolute;
   left: 50px;
   bottom: 31px;
@@ -410,7 +420,6 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #fff;
-  margin: 0;
 }
 
 /* Want tour */
@@ -471,89 +480,134 @@ body {
 /* Contacts */
 .blog-contacts {
     background-color: #fff;
-    padding: 40px;
+    padding: 45px;
     border-radius: 15px;
-    width: 100%;
-}
-
-.contacts-title {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
-}
+    margin-bottom: 40px;
+  }
 
 .blog-contacts {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .contacts-info {
-    flex: 1;
+  width: 375px;
 }
 
 .info-item {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.info-item:last-of-type {
-    border-bottom: none;
-    margin-bottom: 30px;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .info-label {
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     width: 100px;
 }
 
 .info-content {
-    flex: 1;
+    flex: 0.9;
+    margin: 0;
     font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000;
 }
 
 .phone-link, .email-link {
     display: block;
-    color: #cc9933; /* Золотистый цвет с макета */
+    color: #cc9933;
     text-decoration: none;
 }
 
 .email-desc {
     color: #999;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.email-group {
+.email-group:first-of-type {
     margin-bottom: 10px;
 }
 
 .btn-route {
-    padding: 15px 30px;
-    border: 1px solid #cc9933;
-    background: transparent;
-    color: #cc9933;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.btn-route:hover {
-    background-color: #cc9933;
-    color: #fff;
-}
-
-.contacts-image {
-    flex: 1.2;
+  padding: 27px 30px;
+  margin-top: 20px;
 }
 
 .contacts-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 45px;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+.footer-col {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 190%;
+}
+
+.footer-col p {
+  margin: 0;
+}
+
+.disclaimer {
+    padding: 40px 0;
+    max-width: 300px;
+}
+
+.contacts, .emails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.gold-link {
+    color: #cc9933;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #888;
+    font-size: 20px;
+}
+
+.sun-img {
+    width: 250px;
+    position: absolute;
+    bottom: -20px;
+    right: 250px;
 }
