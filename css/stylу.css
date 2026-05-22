@@ -281,13 +281,18 @@ body {
 
 .services-list {
   flex-wrap: wrap;
-  gap: 24px;
 }
 
 .services-item {
-  width: 570px;
+  width: 588px;
   background: #fff;
   border-radius: 15px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.services-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .blog-services-text {
@@ -322,19 +327,20 @@ body {
 
 .advantage-list {
   flex-wrap: wrap;
-  gap: 22px;
 }
 
 .advantage-item {
   border-radius: 15px;
-  width: 276px;
+  width: 283px;
   height: 276px;
   background: #fff;
   padding: 40px 42px 32px 45px;
+  margin-right: 22px;
+  margin-bottom: 22px;
 }
 
-.advantage-item:not(:nth-child(4n)) {
-  padding-right: 25px;
+.advantage-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .advantage-item-descr {
@@ -358,7 +364,7 @@ body {
 }
 
 .hotels-item {
-  width: 374px;
+  width: 384px;
   height: 440px;
   background: #fff;
   border-radius: 15px;
