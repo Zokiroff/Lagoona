@@ -99,6 +99,31 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.phone:focus {
+  color: #c93;
+  outline: 1px solid #c93;
+}
+.phone:hover {
+  color: #f0bf5f;
+}
+.phone:active {
+  color: #a47312;
+  outline: none;
+}
+
+.header-logo-link svg {
+  fill: #c93;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.header-logo-link:hover svg {
+  fill: #F0BF5F;
+}
+.header-logo-link:active svg {
+  fill: #A47312;
 }
 
 .header-logo-link {
@@ -106,14 +131,18 @@ body {
   font-size: 16px;
   color: #c93;
   margin-left: auto;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 21px 21px;
-  padding-left: 26px;
+  transition: color 0.3s ease-in-out;
 }
 
-.header-logo-tab {
-  background-image: url(../img/keyboard_tab.svg);
+.header-logo-link:focus {
+  outline: 1px solid #c93;
+}
+.header-logo-link:hover {
+  color: #F0BF5F;
+}
+.header-logo-link:active {
+  color: #A47312;
+  outline: none;
 }
 
 .header-nav {
@@ -143,6 +172,22 @@ body {
   max-height: 100%;
   background: #fff;
   cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: 1px solid #c93;
+  color: #fff;
+  background: #c93;
+}
+.btn:hover {
+  color: #fff;
+  background: #c93;
+}
+.btn:active {
+  color: #fff;
+  background: #a47312;
+  outline: none;
 }
 
 .header-btn {
@@ -153,6 +198,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-link:focus {
+  color: #c93;
+  outline: 1px solid #c93;
+}
+.header-link:hover {
+  color: #f0bf5f;
+}
+.header-link:active {
+  color: #a47312;
+  outline: none;
 }
 
 /* Special */
@@ -291,6 +349,10 @@ body {
   margin-bottom: 24px;
 }
 
+.blog-services-image {
+  width: 100%;
+}
+
 .services-item:nth-child(2n) {
   margin-right: 0;
 }
@@ -360,7 +422,6 @@ body {
 
 .hotels-list {
   flex-wrap: wrap;
-  gap: 24px;
 }
 
 .hotels-item {
@@ -368,10 +429,21 @@ body {
   height: 440px;
   background: #fff;
   border-radius: 15px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.hotels-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.blog-hotel-image {
+  width: 100%;
 }
 
 .blog-hotels-descr {
-  padding: 30px 45px;
+  width: 100%;
+  padding: 32px 45px;
 }
 
 .blog-descr-header {
@@ -400,6 +472,8 @@ body {
 }
 
 .blog-hotels-hotel {
+  margin: 0;
+  padding-top: 16px;
   font-weight: 400;
   font-size: 16px;
   color: #000;
